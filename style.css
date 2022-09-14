@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    background-color:rgb(13, 13, 13);
+}
+
+/*============= nav ======== */
+
+header{
+    padding: 2rem;
+    background-color:rgb(11, 11, 11);
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li{
+    margin-left: 1rem;
+    color: rgb(37, 255, 182);
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+nav li:hover{
+    color: rgb(168, 168, 168);
+    transition: all 0.4s ease;
+}
+nav a{
+    text-decoration: none;
+}
+
+.title{
+    font-family:"Comfortaa";
+    font-size: 2rem;
+    color: rgb(37, 255, 182);
+}
+
+/*=========== main =======*/
+
+.bg-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+#btn{
+    border: none;
+    margin-top: 4rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20%;
+    font-family: monospace;
+    font-size: 1rem;
+    background-color:rgb(37, 255, 182);
+}
+
+#btn:hover{
+    background-color: rgb(168, 168, 168);
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}
+
+#color-name{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+@media (max-width: 500px){
+    .nav-container{
+        flex-direction: column;
+    }
+    nav ul{
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    nav li{
+        margin: 0 1.5rem;
+    }
+    #color-name{
+        font-size: 1.5rem;
+    }
+    #btn{
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
